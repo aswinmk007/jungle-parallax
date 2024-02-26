@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.image{
+    position: relative;
+    height: 100vh;
+}
+.head{
+    margin-top: 13rem;
+    margin-left: 18rem;
+    font-size: 26px;
+}
+.btn1{
+    width: 140px;
+    height: 40px;
+    background-color: #479B23;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    margin-top: 1rem;
+    font-size: 15px;
+   
+}
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    /* background: rgb(239, 213, 228); */
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 40vh;
+    width: 30vw;
+    margin: 0 40px;
+    border-radius: 9px;
+}
+.discovery{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+.about{
+    font-size: 26px;
+}
+
+
+
